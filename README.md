@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# github profiles App
+
+github profiles created with react and tailwind css framework you can search github profiles and display their repos and gists 
+
+# usage
+Rename .env.example to .env
+You can use the Github API without a personal token, but if you want to use your token, add it to the .env file
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

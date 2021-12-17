@@ -2,6 +2,11 @@
 
 github profiles created with react and tailwind css framework you can search github profiles and display their repos and gists 
 
+![Capture d’écran 2021-12-17 095401](https://user-images.githubusercontent.com/73104268/146527474-21cc6f73-48b2-4bc9-9ef2-839f2d9cf235.png)
+
+![Capture d’écran 2021-12-17 095429](https://user-images.githubusercontent.com/73104268/146527509-f9d5d1e2-0e5a-4fcd-b32e-5e6d7133e2ba.png)
+
+
 # usage
 Rename .env.example to .env
 

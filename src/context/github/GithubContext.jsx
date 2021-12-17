@@ -77,6 +77,11 @@ export const GithubProvider = ({ children }) => {
   const getRepos = async (login) => {
     setLoading();
 
+    const params = new URLSearchParams({
+      sort: "created",
+      per_page: 10,
+    });
+
     const config = {
       headers: {
         Authorization: `token ${GITHUB_TOKEN}`,
@@ -84,7 +89,7 @@ export const GithubProvider = ({ children }) => {
     };
 
     const { data } = await axios.get(
-      `${GITHUB_URL}/users/${login}/repos?per_page=5&sort=created:asc`,
+      `${GITHUB_URL}/users/${login}/repos?${params}`,
       config
     );
 
@@ -93,7 +98,7 @@ export const GithubProvider = ({ children }) => {
       payload: data,
     });
   };
-  
+
   //   Clear users from state
   const clearUsers = () =>
     dispatch({
